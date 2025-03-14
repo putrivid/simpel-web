@@ -1,0 +1,348 @@
+*,
+*::before,
+*::after {  
+  box-sizing: border-box;   
+}
+
+body{
+    font-family: 'Libre-Bodoni', sans-serif;
+    height: 100px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+}
+  h2{
+  font-style: bold;
+}
+
+h3 {
+  font-family: 'comic sans ms';
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #bd7741;
+  width: 100%;
+  line-height: 50px;
+}
+
+p {
+  text-align: center;
+}
+
+.logo img {
+  width: 150px;
+}
+
+header.navbar-container {
+    width: 100%;
+    margin-inline: auto;
+    max-width: 1200px;
+    padding-block: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    position: -webkit-sticky;
+    z-index: 9999 ;
+    background-color: #FFFFFF;
+}
+
+.navbar-container .nav-list ul {
+    padding-left: 2;
+    display: flex;
+    justify-content: center;
+    gap: 2rem 1rem;
+}
+
+.navbar-container .nav-list li {
+  list-style-type: none;
+}
+
+.navbar-container .nav-list li a {
+    padding: 0.5rem 1.5rem;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: #ebbb2c;
+    transition: all 0.2s ease-in-out;
+}
+
+.navbar-container .nav-list li:hover a {
+    background-color: #ebbb2c;
+    color: white;
+}
+
+.dropdown{
+  position: relative;
+  display: inline-block;
+}
+
+.more{
+  display: none;
+  position: absolute;
+  overflow: auto;
+}
+
+.dropdown:hover .more, .more a{
+  display: block;
+}
+
+.jumbotron{
+  padding: 250px;
+  background-image: url(image/bgblurr.png);
+  background-size: cover;
+  position: center;
+  display: flex; 
+  flex: 1;
+  height: 600px;
+  width: 100%;
+  
+}
+section {
+  margin: auto;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+  main{
+    flex: 1;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 4rem;
+    display: row flex;
+    align-items: right;
+    position: relative;
+    margin-right: 500pxs;
+  }
+  
+  main .home , main .konseling{
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+
+  main .home .intro {
+    flex: 1 1;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .title {
+    font-size: 3.5rem;
+    color: #ebbb2c;
+  }
+
+  main .home .intro p {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    border-style: dashed;
+    border-color: #ebbb2c;
+    padding: 10px;
+  }
+
+  button {
+    padding: 0.8rem 2.5rem;
+    border: 4px solid transparent;
+    border-radius: 999px;
+    margin-block-start: 1rem;
+    background-color: #ebbb2c;
+    font-family: 'comic sans ms';
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+    transition: all 0.15s ease-in;
+  }
+
+  button:hover {
+    border: 4px solid #ebbb2c;
+    background-color: transparent;
+    color: #ebbb2c;
+  }
+
+  main .home .gambar1 {
+    flex: 1;
+    display: flex;
+  }
+
+  main .home .gambar1 img {
+    width: 300px;
+    min-width: 250px;
+    margin: auto;
+  }
+  
+  main #content .afirmasi .kolom .afir{
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+
+  main aside article {
+    height: 100%;
+    display: flex; 
+  }
+
+  main aside article header {
+    padding: auto;
+    margin-top: 50px;
+    margin: auto;
+    background-color: #ebbb2c;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+  }
+
+  main aside article header .img {
+    width: 10px;
+    height: 10px;
+  }
+
+  main aside article header:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    z-index: 99;
+    border-radius: 100%;
+  }
+  
+  #myBtn:hover {
+    background-color: white
+  }
+  
+.kolom {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.afir{
+  background-color: #f3f3f3; 
+  border-left: double #ebbb2c; 
+  border-radius: 10px; 
+  padding: 10px; 
+  text-align: justify;
+  margin-left:0px;
+}
+
+.img-afir img{
+  margin-top: 50px;
+  float: left;
+  width: 400px;
+  height: 400px;
+  margin-right: 50px;
+}
+
+.rata {
+  text-align: center;
+  width: 100%;
+}
+
+.nama-tokoh {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.nama-tokoh img {
+  width: 1100px;
+  height: 300px;
+  border-radius: 20%;
+}
+
+.nama-tkh, .daftar-buku, .nama-channel{
+  width: 20%;
+  margin: 0 auto;
+}
+
+.nama-tkh img, .nama-channel img{
+  width: 80%;
+  border-radius: 50%;
+}
+
+.nama-tkh p {
+  font-style: 'comic sans ms';
+  font-weight: 800;
+  font-size: 25px;
+  text-align: center;
+  color: #ebbb2c;
+}
+
+.konten {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.daftar-buku img {
+  width: 150px;
+  border-radius: 30%;
+  box-shadow: #ebbb2c;
+}
+
+
+  @media screen and (max-width: 1000px) {
+    header.navbar-container {
+      flex-direction: column;
+    }
+
+    header .navbar-container .nav-list ul {
+      flex-wrap: wrap;
+      column-gap: 0.5rem;
+    }
+    
+    main {
+      padding: 1rem 3rem;
+    }
+
+    main .home {
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    main .home .intro .title {
+      font-size: 3rem;
+    }
+
+    main .home .intro p {
+      font-size: 1rem;
+    }
+
+    main .home .content-image {
+      order: -1;
+    }
+
+    aside{
+      width: 100%;
+      flex: auto;
+    }
+
+    footer .copyright{
+      flex-direction: column;
+    }
+  }
+  
+  #disclaimer {
+    background: #d44f4f;
+    padding:50px 0px 50px 0px;
+    color: #FFFFFF;
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+  }
+
+  #copyright {
+    text-align: center;
+    width: 100%;
+    padding: 50px 0px 50px 0px;
+}
+
+
+
